@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+}
+body{
+    font-family: monospace; 
+}
+li,a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 26px;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: tomato;
+}
+li{
+    margin: 11px;
+    float: left;
+    margin-top: 25px;
+}
+.home{
+    margin-left: -15px;
+}
+ul li ul { 
+    background: tomato; 
+    visibility: hidden; 
+    opacity: 0; 
+    position: absolute; 
+    transition: all 0.5s ease;  
+    display: none; 
+}
+ul li:hover > ul, 
+  ul li ul:hover { 
+    visibility: visible; 
+    opacity: 1; 
+    display: block; 
+}
+ul li ul li { 
+    clear: both; 
+    width: 100%; 
+}
